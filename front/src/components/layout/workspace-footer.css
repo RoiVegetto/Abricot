@@ -1,0 +1,35 @@
+.workspace-footer {
+  height: 60px;
+  border-top: 1px solid #e3e5e8;
+  background: #ffffff;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.workspace-footer-logo {
+  width: 102px;
+  height: auto;
+}
+
+.workspace-footer p {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1;
+  color: #202227;
+}
+
+@media (max-width: 900px) {
+  .workspace-footer {
+    padding: 0 16px;
+  }
+
+  .workspace-footer-logo {
+    width: 86px;
+  }
+
+  .workspace-footer p {
+    font-size: 24px;
+  }
+}

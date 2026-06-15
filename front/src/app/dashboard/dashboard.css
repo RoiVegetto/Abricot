@@ -1,0 +1,276 @@
+.dashboard-page {
+  min-height: 100vh;
+  background: #ececef;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-content {
+  max-width: 1250px;
+  width: 100%;
+  margin: 42px auto 26px;
+  padding: 0 22px;
+  flex: 1;
+}
+
+.dashboard-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.dashboard-title {
+  margin: 0;
+  font-size: 38px;
+  color: #1f2228;
+}
+
+.dashboard-subtitle {
+  margin: 10px 0 0;
+  color: #32353a;
+  font-size: 21px;
+}
+
+.dashboard-create-btn {
+  margin-top: 12px;
+  height: 50px;
+  border-radius: 10px;
+  border: 0;
+  background: #1f1f21;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 0 24px;
+}
+
+.dashboard-view-switch {
+  margin-top: 38px;
+  display: flex;
+  gap: 12px;
+}
+
+.view-btn {
+  height: 38px;
+  border: 1px solid #f6ccb0;
+  background: #fdf0e6;
+  color: #d85f0f;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 17px;
+}
+
+.view-btn.is-active {
+  background: #f8e3d2;
+  border-color: #f0c7aa;
+}
+
+.task-list-box {
+  margin-top: 26px;
+  border: 1px solid #dfe2e6;
+  border-radius: 10px;
+  padding: 28px;
+  background: #f5f6f8;
+}
+
+.task-list-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.task-list-header h2 {
+  margin: 0;
+  font-size: 31px;
+  color: #1e2127;
+}
+
+.task-list-header p {
+  margin: 8px 0 0;
+  font-size: 20px;
+  color: #7f8590;
+}
+
+.task-search {
+  width: 340px;
+  height: 54px;
+  border: 1px solid #d8dde3;
+  border-radius: 8px;
+  background: #f9f9fb;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  gap: 8px;
+}
+
+.task-search input {
+  border: 0;
+  flex: 1;
+  background: transparent;
+  outline: 0;
+  font-size: 16px;
+}
+
+.task-search span {
+  color: #8a9099;
+}
+
+.task-list-items {
+  margin-top: 22px;
+  display: grid;
+  gap: 12px;
+}
+
+.task-row-card {
+  border: 1px solid #dadfe5;
+  border-radius: 10px;
+  background: #fbfcfd;
+  min-height: 116px;
+  padding: 18px 18px 16px 28px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.task-row-main h3 {
+  margin: 0;
+  font-size: 26px;
+  color: #1d2025;
+}
+
+.task-row-main p {
+  margin: 8px 0 0;
+  font-size: 16px;
+  color: #8d939c;
+}
+
+.task-meta {
+  margin-top: 16px;
+  display: flex;
+  gap: 14px;
+  color: #838a95;
+  font-size: 14px;
+}
+
+.task-row-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  border-radius: 999px;
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+.status-todo {
+  color: #e45c5c;
+  background: #f8e0e0;
+}
+
+.status-in_progress {
+  color: #d88a1a;
+  background: #f8ead0;
+}
+
+.status-done {
+  color: #3aa963;
+  background: #def5e7;
+}
+
+.task-view-btn {
+  width: 118px;
+  height: 44px;
+  border: 0;
+  border-radius: 8px;
+  color: #ffffff;
+  background: #1f1f21;
+  font-size: 24px;
+}
+
+.kanban-board {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.kanban-column {
+  border: 1px solid #f0d6d6;
+  border-radius: 10px;
+  padding: 18px 14px;
+  background: #f7f8fa;
+}
+
+.kanban-column-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.kanban-column-header h2 {
+  margin: 0;
+  font-size: 30px;
+  color: #1f2228;
+}
+
+.kanban-column-header span {
+  min-width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: #dde1e6;
+  color: #6c727a;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kanban-items {
+  display: grid;
+  gap: 12px;
+}
+
+.kanban-task-card {
+  border: 1px solid #dadfe5;
+  border-radius: 10px;
+  background: #fbfcfd;
+  min-height: 172px;
+  padding: 16px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.kanban-card-bottom {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@media (max-width: 1250px) {
+  .dashboard-header-row {
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  .task-list-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-search {
+    width: 100%;
+  }
+
+  .kanban-board {
+    grid-template-columns: 1fr;
+  }
+}
